@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Natalia Rodriguez</title>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- ====Favicons==== -->
+    <!-- <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon"> -->
+    <link rel="icon" href="favicon.png" type="image/x-icon">
+    
+    <!-- ==== Google Font ==== -->
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+
+    <!-- ==== Font Awesome ==== -->
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    
+    <!-- ==== Bootstrap ==== -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- ==== jQuery UI ==== -->
+    <link href="css/jquery-ui.min.css" rel="stylesheet">
+    
+    <!-- ==== Owl Carousel Plugin ==== -->
+    <link href="css/owl.carousel.min.css" rel="stylesheet">
+    
+    <!-- ====Main Stylesheet==== -->
+    <link href="style.css" rel="stylesheet">
+    
+    <!-- ====Custom Stylesheet==== -->
+    <link href="css/custom-style.css" rel="stylesheet">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-157444923-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-157444923-1');
+    </script>
+
+    <style>
+        #myCarousel li{
+            background-color: rgba(0,0,0,.2);
+            border: initial;
+        }
+
+        #myCarousel li.active{
+            background-color: #666;
+        }
+
+        #myCarousel ol {
+            bottom: -50px; letter-spacing: 3px; z-index: 0;
+        }
+
+    </style>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="js/html5shiv.min.js"></script>
+        <script src="js/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="100">
+    <!-- Wrapper Start -->
+    <div class="wrapper">
+
+
+        <!-- Side Nav Start -->
+                        <div class="side" id="side">
+                            <ul>
+                                <li><a href="#ai1">Overview</a></li>
+                                <li><a href="#ai2">Research Process</a></li>
+                                <li><a href="#ai3">Results</a></li>
+                                <li><a href="#ai4">Discussion</a></li>
+                                <li><a href="#ai5">Relflection</a></li>
+                            <!--<li><a href="#RM">Remarks</a></li>-->
+                            </ul>
+                        </div>
+        <!-- Side Nav End -->
+        
+        <!-- Header Area Start -->
+        <div id="header">
+            <nav class="header--navbar">
+                <div class="container">
+                    <div class="navbar">
+                        <div class="navbar-header">
+                        
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#headerNav" aria-expanded="false" aria-controls="headerNav">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                            
+                            <!-- Logo Start -->
+                            <a class="logo navbar-brand" href="index.html">
+                                
+                                <div class="logo--content" id="logo--content">
+                                    <h1>Natalia Rodriguez</h1>
+                                    <p>HCI Portfolio</p>
+                                </div>
+                            </a>
+                            <!-- Logo End -->
+                        </div>
+                       
+                        <div id="headerNav" class="header--nav navbar-collapse collapse">
+                            <ul class="nav navbar-nav navbar-right AnimateScroll">
+                                <li><a href="https://naty-rodrig99.github.io//#header">HOME</a></li>
+                                <li><a href="https://naty-rodrig99.github.io//#gallery">PROJECTS</a></li>
+                                <li><a href="https://naty-rodrig99.github.io//#about">ABOUT</a></li>
+                                <!--<li><a href="/pdf/peiyunchung_cv.pdf" target="_blank">RESUME</a></li> -->          
+                                <li><a href="https://www.linkedin.com/in/natalia-ra04/">LINKEDIN</a></li>
+                            </ul>
+                        </div>
+                        <!-- Header Nav End -->
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <!-- Header Area End -->
+
+            <!-- Body Area Start -->
+            <div class="container">
+
+                <!-- Modal Body Start -->
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-offset-1 col-md-10 col-xs-offset-1 col-xs-10 reset-padding post-title">
+                            <h2 id="ai1">Sentiment Classification</h2>
+                            <h4>Comparing Naive Bayesian and SVM algorithms in sentiment classification</h4>
+                        </div>
+
+                        <div class="col-md-12" style="text-align: center;" id="ai1">
+                            <img src="img/project-img/sent-main.png" alt="" class="img-responsive" style="width: 35%; height: auto;  margin: 0 auto; display: block;">
+                        </div>
+                        
+                        <div class="col-md-offset-1 col-md-10 col-xs-offset-1 col-xs-10 reset-padding post-content">
+
+                    <div class="row">
+                        <div class="col-md-8">
+
+                            <h5>OVERVIEW</h5>
+                            <p>This project compares and evaluates the performance of Naive Bayesian and SVM algorithms in sentiment classification. By analyzing user-generated textual data, specifically from Yelp reviews, aiming to enhance understanding of their methodologies and improve the extraction of user insights from textual data.</p>
+
+
+                            <h5>OBJECTIVE</h5>
+                            <p>Comparing Naive Bayesian and SVM algorithms in sentiment classification to reveal their unique approaches and enhance user insights.</p>
+                            
+                            <h5>PROBLEM STATEMENT</h5>
+                            <p style="text-align: center">"How do Naive Bayesian and SVM algorithms compare in their effectiveness for sentiment classification, and what impact does this have on accurately extracting user insights from textual data?"</p>
+
+                        </div>
+
+                        <div class="col-md-1"></div>                     
+                          
+                        <div class="col-md-3">
+                            <h5>ITEM</h5>
+                            <p>Graduate project</p> 
+
+                            <h5>METHODS</h5>
+                            <p>Naive Bayesian Classifier and SVM (Support Vector Machine) Classifier</p>
+
+                            <h5>TOOLS</h5>
+                            <p>Python</p>       
+
+                            <h5>TEAM</h5>
+                            <p>Individual</p>
+                            
+                            <h5>TIME FRAME</h5>
+                            <p>2 weeks</p> 
+                        </div>
+                    </div>
+
+                <div class="divider" id="ai2">
+                    <div class="dot1"></div>
+                    <div class="dot2"></div>
+                    <div class="dot3"></div>
+                </div>  
+                    
+                    <h3>METHODOLOGY</h3>
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h4>Algorithms</h4>
+                            <ul>
+                                <li><strong>Naive Bayesian: </strong>Chosen for its simplicity and effectiveness in handling discrete frequency counts.</li>
+                                <li><strong>SVM (Support Vector Machine): </strong>Selected for its ability to classify linearly separable data.</li>
+                            </ul>
+                            
+                            <h4>Dataset</h4>
+                            <p>Utilized Yelp reviews as the primary source of textual data and was divided in:</p>
+                            <ul>
+                                <li>Train: 7500 reviews</li>
+                                <li>Evaluation: 5000 reviews</li>
+                                <li>Test: 2500 reviews </li>
+                            </ul>   
+                        </div>
+                        
+                        <div class="col-md-6">
+                        
+                            <img src="img/project-img/sent-methodology.png" alt="" class="img-responsive" style="width: 100%; height: auto;  margin: 0 auto; display: block;">
+                        
+                        </div>
+                    </div>
+                    <br>
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h4>Preprocessing</h4>
+                            <p>Implemented the following to clean the data:</p>
+                            <ul>
+                                <li>Removed HMTL, tags, @, #, ‘http’, ‘www’.</li>
+                                <li>Converted to lower case.</li>
+                                <li>Removed punctuation and non-alphabetic characters.</li>
+                                <li>Splitted into individual words.</li>
+                                <li>Joined into a cleaned string.</li>
+                            </ul>
+                        </div>
+                          
+                        <div class="col-md-6">
+                            <h4>Feature Extraction</h4>
+                            <p><strong>TF-IDF (Term Frequency-Inverse Document Frequency):</strong></p>
+                            <ul>
+                                <li>This method was used to convert text into a matrix format, representing the importance of each word in the context of the documents.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="divider" id="ai2">
+                        <div class="dot1"></div>
+                        <div class="dot2"></div>
+                        <div class="dot3"></div>
+                    </div>  
+
+                    <h3>IMPLEMENTATION</h3>
+                    <h4>Naive Bayes Classifier</h4>
+
+                    <h5>1. Training the Naive Bayes Classifier</h5>
+                    <ul>
+                        <li>Splits the training data into positive and negative sentiment classes based on the target labels.</li>
+                        <li>Creates word frequency counts for each class, capturing how often each word appears in both positive and negative texts.</li>
+                        <li>Class priors are calculated, representing the proportion of positive and negative samples in the dataset.</li>
+                    </ul>
+
+                    <h5>2. Predicting Sentiment</h5>
+                    <ul>
+                        <li>Used the trained model to calculate log probabilities for each class (positive and negative), ensuring numerical stability.</li>
+                        <li>For each word in the text, it computes the likelihood of the word belonging to the positive or negative class, using frequency counts.</li>
+                        <li>The class with the higher log probability is returned as the prediction (either positive or negative).</li>
+                    </ul>
+
+                    <h5>3. Model Evaluation</h5>
+                    <ul>
+                        <li>Applied the trained Naive Bayes model to the evaluation dataset, which contains 5,000 Yelp reviews from a different category than the training data. This tested the model's generalization ability.</li>
+                        <li>The same process was repeated for the test dataset, and accuracy metrics were calculated for both datasets.</li>
+                    </ul>
+
+                    <br>
+
+                    <h4>SVM (Support Vector Machine) Classifier</h4>
+
+                    <h5>1. Label Preparation</h5>
+                    <p>Before training the SVM, the sentiment scores are converted into two classes:</p>
+                    <ul>
+                        <li>Positive sentiment is labeled as 1.</li>
+                        <li>Negative sentiment is labeled as -1.</li>
+                    </ul>
+
+                    <h5>2. SVM Model Training</h5>
+                    <p>Trained the linear SVM model using a stochastic gradient descent approach:</p>
+                    <ul>
+                        <li>It initializes the weights and bias to zero.</li>
+                        <li>For each iteration, the function updates the weights and bias based on whether a sample is correctly classified, adjusting them to maximize the margin between the positive and negative classes.</li>
+                        <li>The learning rate and regularization parameters control the step size and penalty for large weights, respectively, improving the model's generalization.</li>
+                    </ul>
+
+                    <h5>3. Prediction</h5>
+                    <ul>
+                        <li>Computed the dot product between the feature vectors and the learned weights to classify each sample as positive or negative, outputs predictions as either 1 (positive) or -1 (negative).</li>
+                    </ul>
+
+                    <h5>4. Evaluation</h5>
+                    <ul>
+                        <li>Applying the trained SVM model to the evaluation dataset, which contains 5,000 Yelp reviews from a different category than the training data.</li>
+                        <li>The same process was repeated for the test dataset, and accuracy metrics were calculated for both datasets.</li>
+                    </ul>
+
+                    <div class="divider" id="ai2">
+                        <div class="dot1"></div>
+                        <div class="dot2"></div>
+                        <div class="dot3"></div>
+                    </div>  
+
+                    <h3>RESULTS</h3>
+
+                    <div class="divider" id="ai2">
+                        <div class="dot1"></div>
+                        <div class="dot2"></div>
+                        <div class="dot3"></div>
+                    </div>  
+                    
+                    <h3>REFLECTION</h3>
+
+                    <div class="row">
+                        <div class="col-md-2">
+                            <h4>Future Work</h4>
+                        </div>
+
+                        <div class="col-md-8">
+                            <ul>
+                                <li><strong>Deep Learning Models: </strong>Exploring deep learning models like recurrent neural networks (RNNs) or transformers could offer even better performance on sentiment classification tasks involving large text datasets.</li>
+                                <li><strong>Data Sources: </strong>Look for additional data sources or more diverse datasets to train and evaluate the models, improving generalization.</li>
+                            </ul>
+                        </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-2">
+                            <h4>Future Work</h4>
+                        </div>
+
+                        <div class="col-md-8">
+                            <ul>
+                                <li>Gained insights into the strengths and weaknesses of different classification algorithms (Naïve Bayes vs. SVM) and how their performance varies based on the dataset.</li>
+                                <li>Became interested in exploring more advanced techniques and algorithms for text classification, recognizing the potential for improved performance.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+
+                        </div>
+                    </div>
+                </div>
+                <!-- Modal Body End -->
+
+            </div>
+            <!-- Body Area End -->      
+         
+  
+        <!-- Footer Area Start -->
+        <div id="footer">
+            <!-- Contact Social Start -->
+            <div class="contact--social">
+                <ul>
+                    <li><a title="LinkedIn" target="_blank" href="https://www.linkedin.com/in/natalia-ra04/"><i class="fa fa-linkedin"></i></a></li>
+                    <li><a title="GitHib" target="_blank" href="https://github.com/naty-rodrig99"><i class="fa fa-github"></i></a></li>                   
+                </ul>
+            </div>
+            <!-- Contact Social End -->            
+            <div class="container">
+                <!-- Footer Copyright Start -->
+                <div class="footer--copyright" style="font-weight: 300; color: #999999;">
+                    <p>Copyright &copy; 2025 <a href="index.html" style=" color: #999999;">Natalia Rodriguez</a>. All Rights Reserved.</p>
+                </div>
+                <!-- Footer Copyright End -->
+            </div>
+        </div>
+        <!-- Footer Area End -->
+        
+        <!-- Back To Top Area Start -->
+        <div id="backToTop">
+            <a href="#header" class="btn--default AnimateScrollLink"><i class="fa fa-angle-up"></i></a>
+        </div>
+        <!-- Back To Top Area End -->
+    </div>
+    <!-- Wrapper End -->
+
+    <!-- ==== jQuery ==== -->
+    <script src="js/jquery.min.js"></script>
+
+    <!-- ==== Bootstrap ==== -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- ==== jQuery UI DatePicker Plugin ==== -->
+    <script src="js/jquery-ui.min.js"></script>
+
+    <!-- ==== Owl Carousel Plugin ==== -->
+    <script src="js/owl.carousel.min.js"></script>
+
+    <!-- ==== Isotope Plugin ==== -->
+    <script src="js/isotope-docs.min.js"></script>
+    
+    <!-- ==== jQuery Form Plugin ==== -->
+    <script src="js/jquery.form.min.js"></script>
+    
+    <!-- ==== jQuery Validation Plugin ==== -->
+    <script src="js/jquery.validate.min.js"></script>
+
+    <!-- ==== Google Map API ==== -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBK9f7sXWmqQ1E-ufRXV3VpXOn_ifKsDuc"></script>
+    
+    <!-- ==== GMaps Plugin ==== -->
+    <script src="js/gmaps.min.js"></script>
+    
+    <!-- ==== jQuery Waypoints Plugin ==== -->
+    <script src="js/jquery.waypoints.min.js"></script>
+    
+    <!-- ==== Animate Scroll Plugin ==== -->
+    <script src="js/animatescroll.min.js"></script>
+    
+    <!-- ==== CounterUp Plugin ==== -->
+    <script src="js/jquery.counterup.min.js"></script>
+    
+    <!-- ==== jQuery Nice Scroll Plugin ==== -->
+    <script src="js/jquery.nicescroll.min.js"></script>
+    
+    <!-- ==== Parallax Plugin ==== -->
+    <script src="js/parallax.min.js"></script>
+    
+    <!-- ==== jQuery Tubular Plugin ==== -->
+    <script src="js/jquery.tubular.1.0.js"></script>
+    
+    <!-- ==== RetinaJS Plugin ==== -->
+    <script src="js/retina.min.js"></script>
+
+    <!-- ==== Main Script ==== -->
+    <script src="js/main.js"></script>
+
+</body>
+</html>
