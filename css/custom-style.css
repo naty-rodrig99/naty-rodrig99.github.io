@@ -5,3 +5,12 @@ NOTE:
 WRITE YOUR OWN CUSTOM CSS STYLES HERE.
 
 */
+
+
+.centered-text {
+    max-width: 700px; /* Adjust as needed */
+    margin: 0 auto;
+    text-align: center;
+    font-size: 18px; /* Adjust for readability */
+    line-height: 1.6;
+}
