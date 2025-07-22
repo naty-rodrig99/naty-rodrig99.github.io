@@ -149,14 +149,14 @@
                         <div class="col-md-8">
 
                             <h5>OVERVIEW</h5>
-                            <p></p>
+                            <p>As artificial intelligence and social robots become more common in daily life, their success depends not only on technical performance but also on how humans perceive and interact with them. People naturally anthropomorphize robots, projecting traits and social expectations, especially when robots have cues like voice, facial expressions, or body language. These design choices, particularly related to gender, influence perceptions of trust, competence, and role suitability. Feminist robot studies have highlighted how gendered designs can reinforce harmful stereotypes, promoting calls for more inclusive and ethically responsible design approaches. </p>
 
 
                             <h5>OBJECTIVE</h5>
-                            <p>Comparing Naive Bayesian and SVM algorithms in sentiment classification to reveal their unique approaches and enhance user insights.</p>
+                            <p>While previous research has focused on male and female robot personas, little is known about how users respond to gender-ambiguous robots. This study explores how trust and perception are shaped by a gender-ambiguous robot's performance and task context, considering user characteristics like age and previous experience with robots. By doing so, it challenges traditional gender norms in robot design and advocates for more socially aware and inclusive human-robot interaction practices.</p>
                             
                             <h5>PROBLEM STATEMENT</h5>
-                            <p style="text-align: center"><strong>"How do Naive Bayesian and SVM algorithms compare in their effectiveness for sentiment classification, and what impact does this have on accurately extracting user insights from textual data?"</strong></p>
+                            <p style="text-align: center"><strong>"How do user interactions with a gender-ambiguous social robot vary with task performance and task context?"</strong></p>
 
                         </div>
 
@@ -164,22 +164,22 @@
                           
                         <div class="col-md-3">
                             <h5>ITEM</h5>
-                            <p>Graduate project</p> 
+                            <p>Master's Thesis Project</p> 
 
                             <h5>METHODS</h5>
-                            <p>Naive Bayesian Classifier and SVM Classifier</p>
+                            <p>Survey, Quantitative Research, Statistical Analysis</p>
 
                             <h5>TOOLS</h5>
-                            <p>Python</p>  
+                            <p>Furhat Robot, Python, Amazon Mechanical Turk, Kotlin</p>  
                             
-                            <h5>CODE</h5>
-                            <u><a href="https://github.com/naty-rodrig99/sentiment_classification">GitHub Link</a></u>
+                            <h5>PRESENTATION</h5>
+                            <u><a href="https://github.com/naty-rodrig99/sentiment_classification">Slides</a></u>
 
                             <h5>TEAM</h5>
                             <p>Individual</p>
                             
-                            <h5>TIME FRAME</h5>
-                            <p>2 weeks</p> 
+                            <h5>PERIOD</h5>
+                            <p>February 2025 - August 2025</p> 
                         </div>
                     </div>
 
@@ -189,54 +189,9 @@
                     <div class="dot3"></div>
                 </div>  
                     
-                    <h3>METHODOLOGY</h3>
+                    <h3>Background</h3>
 
-                    <div class="row">
-                        <div class="col-md-6">
-                            <h4>Algorithms</h4>
-                            <ul>
-                                <li><strong>Naive Bayesian: </strong>Chosen for its simplicity and effectiveness in handling discrete frequency counts.</li>
-                                <li><strong>SVM (Support Vector Machine): </strong>Selected for its ability to classify linearly separable data.</li>
-                            </ul>
-                            
-                            <h4>Dataset</h4>
-                            <p>Utilized Yelp reviews as the primary source of textual data and was divided in:</p>
-                            <ul>
-                                <li>Train: 7500 reviews</li>
-                                <li>Evaluation: 5000 reviews</li>
-                                <li>Test: 2500 reviews </li>
-                            </ul>   
-                        </div>
-                        
-                        <div class="col-md-6">
-                        
-                            <img src="img/project-img/sent-methodology.png" alt="" class="img-responsive" style="width: 100%; height: auto;  margin: 0 auto; display: block;">
-                        
-                        </div>
-                    </div>
-                    <br>
-
-                    <div class="row">
-                        <div class="col-md-6">
-                            <h4>Preprocessing</h4>
-                            <p>Implemented the following to clean the data:</p>
-                            <ul>
-                                <li>Removed HMTL, tags, @, #, ‘http’, ‘www’.</li>
-                                <li>Converted to lower case.</li>
-                                <li>Removed punctuation and non-alphabetic characters.</li>
-                                <li>Splitted into individual words.</li>
-                                <li>Joined into a cleaned string.</li>
-                            </ul>
-                        </div>
-                          
-                        <div class="col-md-6">
-                            <h4>Feature Extraction</h4>
-                            <p><strong>TF-IDF (Term Frequency-Inverse Document Frequency):</strong></p>
-                            <ul>
-                                <li>This method was used to convert text into a matrix format, representing the importance of each word in the context of the documents.</li>
-                            </ul>
-                        </div>
-                    </div>
+                    
 
                     <div class="divider" id="ai2">
                         <div class="dot1"></div>
@@ -244,58 +199,109 @@
                         <div class="dot3"></div>
                     </div>  
 
-                    <h3>IMPLEMENTATION</h3>
-                    <h4>Naive Bayes Classifier</h4>
-
-                    <h5>1. Training the Naive Bayes Classifier</h5>
-                    <ul>
-                        <li>Splits the training data into positive and negative sentiment classes based on the target labels.</li>
-                        <li>Creates word frequency counts for each class, capturing how often each word appears in both positive and negative texts.</li>
-                        <li>Class priors are calculated, representing the proportion of positive and negative samples in the dataset.</li>
-                    </ul>
-
-                    <h5>2. Predicting Sentiment</h5>
-                    <ul>
-                        <li>Used the trained model to calculate log probabilities for each class (positive and negative), ensuring numerical stability.</li>
-                        <li>For each word in the text, it computes the likelihood of the word belonging to the positive or negative class, using frequency counts.</li>
-                        <li>The class with the higher log probability is returned as the prediction (either positive or negative).</li>
-                    </ul>
-
-                    <h5>3. Model Evaluation</h5>
-                    <ul>
-                        <li>Applied the trained Naive Bayes model to the evaluation dataset, which contains 5,000 Yelp reviews from a different category than the training data. This tested the model's generalization ability.</li>
-                        <li>The same process was repeated for the test dataset, and accuracy metrics were calculated for both datasets.</li>
-                    </ul>
+                    <h3>METHODOLOGY</h3>
+                    <p>The experiment involves defining two different contexts that have been determined to be stereotypically more associated with a role that a male would perform, and another role that is more associated with a task a female would do. Then, recording videos of different users interacting with the robot, in half of the videos the robot will perform without failures, and in the other half with failures. Followed by creating a survey and recruiting participants to watch and rate the different interactions. Lastly, a statistical analysis will be performed to come up with conclusions.</p>
 
                     <br>
 
-                    <h4>SVM (Support Vector Machine) Classifier</h4>
+                    <h4>Experiment Design</h4>
 
-                    <h5>1. Label Preparation</h5>
-                    <p>Before training the SVM, the sentiment scores are converted into two classes:</p>
-                    <ul>
-                        <li>Positive sentiment is labeled as 1.</li>
-                        <li>Negative sentiment is labeled as -1.</li>
-                    </ul>
+                    <div class="row">
+                        <div class="col-md-7">
+                            <h5>Robot Selection</h5>
+                            <p><bold>Furhat robot</bold> was chosen for this experiment, since it allows to <bold>customize</bold> the <bold>face and voice</bold>, enabling the creation of an <bold>intentionally ambiguous</bold> appearance, as well as its established use in prior social robotics research.</p>  
+                            <ul>
+                                <li>Face: Ted</li>
+                                <li>Voice: Amazon Polly’s “Kendra” voice with a lowered pitch</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="col-md-5">
+                            <img src="img/project-img/hri-furhat.jpeg" alt="" class="img-responsive" style="width: 30%; height: auto;  margin: 0; display: block;">
+                        </div>
+                    </div>
 
-                    <h5>2. SVM Model Training</h5>
-                    <p>Trained the linear SVM model using a stochastic gradient descent approach:</p>
-                    <ul>
-                        <li>It initializes the weights and bias to zero.</li>
-                        <li>For each iteration, the function updates the weights and bias based on whether a sample is correctly classified, adjusting them to maximize the margin between the positive and negative classes.</li>
-                        <li>The learning rate and regularization parameters control the step size and penalty for large weights, respectively, improving the model's generalization.</li>
-                    </ul>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <img src="img/project-img/hri-contexts.png" alt="" class="img-responsive" style="width: 100%; height: auto;  margin: 0; display: block;">
+                        </div>
+                        
+                        <div class="col-md-6">
+                            <h5>Context Design</h5>
+                            <p>To examine how task stereotypes influence perceptions of a gender-ambiguous robot, two contexts were selected based on common gender associations in past research:</p>  
+                            <ul>
+                                <li>Assistant: perceived as a female task, due to its frequent use in voice assistant design and associations with caregiving and support.</li>
 
-                    <h5>3. Prediction</h5>
-                    <ul>
-                        <li>Computed the dot product between the feature vectors and the learned weights to classify each sample as positive or negative, outputs predictions as either 1 (positive) or -1 (negative).</li>
-                    </ul>
+                                <li>IT Support: perceived as a male task, due to its commonly societal associations with technology and robots.</li>
+                            </ul>
+                        </div>  
+                    </div>
 
-                    <h5>4. Evaluation</h5>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h5>Robot Behavior & Video Setup</h5>
+                            <p>For each context, Furhat was programmed to behave in 2 ways:</p>  
+                            <ul>
+                                <li>Robot functioning with <strong>technical</strong> (speaking slowly and crashing) and <strong>interaction</strong> (providing the user nonsensical responses) <bold>failures</bold>.</li>
+                                <li>Robot functioning <strong>without any failures</strong> while responding to the user.</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="col-md-6">
+                            <h5>Video Example</h5>
+                            <iframe width="360" height="215" src="https://www.youtube.com/embed/jYem_HGhyrI?si=SPeOk3yCFpwpC3Ox" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                    </div>
+
+                    <h4>Survey Design</h4>
                     <ul>
-                        <li>Applying the trained SVM model to the evaluation dataset, which contains 5,000 Yelp reviews from a different category than the training data.</li>
-                        <li>The same process was repeated for the test dataset, and accuracy metrics were calculated for both datasets.</li>
+                        <li>A survey was used to enable statistical analysis, apply validated scales (e.g., trust, social perception), and ensure comparability with prior HRI studies.</li>
+                        <li>Built on Amazon Mechanical Turk with custom HTML/CSS, participants were randomly shown either 4 failure or 4 no-failure videos. </li>
+                        <li>After giving consent and sharing demographics, participants rated trust, social perception, and the robot’s perceived gender after each video.</li>
                     </ul>
+                    
+                    <img src="img/project-img/hri-methodology.png" alt="" class="img-responsive" style="width: 90%; height: auto;  margin: 0 auto; display: block;">
+
+                    <h4>Metrics</h4>
+                    <p>The following metrics were used to measure trust, social perception, and the robot’s perceived gender. Each used a Likert scale, and the items within each scale were randomized to reduce order effects.</p>
+
+                    <div class="row">
+                        <div class="col-md-4">
+                            <img src="img/project-img/hri-mdmt.png" alt="" class="img-responsive" style="width: 100%; height: auto;  margin: 0; display: block;">
+                        </div>                        
+                        <div class="col-md-4">
+                            <img src="img/project-img/hri-rosas.png" alt="" class="img-responsive" style="width: 90%; height: auto;  margin: 0; display: block;">
+                        </div>
+                        <div class="col-md-4">
+                            <img src="img/project-img/hri-gender.png" alt="" class="img-responsive" style="width: 90%; height: auto;  margin: 0; display: block;">
+                        </div>
+                    </div>
+
+                    <h4>Attention Checks</h4>
+                    <p>To ensure participant attention, an open-ended question was included among the trait items <strong>asking participants to describe what the robot in the video is doing</strong>. Additionally, each video rating included a <strong>randomly placed, unrelated word (e.g. apple, zebra, broccoli, and banana)</strong> within the MDMT (Multi-Dimensional Measure of Trust) scale. Participants were expected to select “Does Not Fit” for these words, serving as an attention check.</p>
+
+                    <br>
+                    <h4>Participants</h4>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <p>Sample size was determined via simulation power analysis, assuming:</p>
+                            <img src="img/project-img/hri-power.png" alt="" class="img-responsive" style="width: 50%; height: auto;  margin: 0; display: block;">
+                        </div>
+                        <div class="col-md-6">
+                            <ul>
+                                <li>Participants were recruited through Amazon Mechanical Turk.</li>
+                                <li>Total of 210 participants: 105 in the no robot failures condition and 105 in the robot failures condition</li>
+                                <li>Each participant had 45 minutes to complete the survey.</li>
+                                <li>Age range: 20 to 69</li>
+                            </ul>
+                        </div>
+                        <h5>Participants' Gender Identification:</h5>
+                        <img src="img/project-img/hri-participants.png" alt="" class="img-responsive" style="width: 40%; height: auto;  margin: 0; display: block;">
+                    </div>
+
+                    <h4>Data Analysis</h4>
+
+                    <img src="img/project-img/hri-data.png" alt="" class="img-responsive" style="width: 100%; height: auto;  margin: 0; display: block;">
 
                     <div class="divider" id="ai2">
                         <div class="dot1"></div>
