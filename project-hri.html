@@ -191,8 +191,10 @@
                     
                     <h3>Background</h3>
 
+                    <h4>Hypotheses</h4>
+                    <p>To structure the study, these hypotheses have been defined. These reflect the expectations about how failures, task context, and participant differences affect trust, gender perception, and social perception of the robot:</p>
+                    <img src="img/project-img/hri-hypotheses.png" alt="" class="img-responsive" style="width: 50%; height: auto; margin: 0 auto; display: block;">
                     
-
                     <div class="divider" id="ai2">
                         <div class="dot1"></div>
                         <div class="dot2"></div>
@@ -270,7 +272,7 @@
                             <img src="img/project-img/hri-mdmt.png" alt="" class="img-responsive" style="width: 100%; height: auto;  margin: 0; display: block;">
                         </div>                        
                         <div class="col-md-4">
-                            <img src="img/project-img/hri-rosas.png" alt="" class="img-responsive" style="width: 90%; height: auto;  margin: 0; display: block;">
+                            <img src="img/project-img/hri-rosas.png" alt="" class="img-responsive" style="width: 80%; height: auto;  margin: 0; display: block;">
                         </div>
                         <div class="col-md-4">
                             <img src="img/project-img/hri-gender.png" alt="" class="img-responsive" style="width: 90%; height: auto;  margin: 0; display: block;">
@@ -285,7 +287,7 @@
                     <div class="row">
                         <div class="col-md-6">
                             <p>Sample size was determined via simulation power analysis, assuming:</p>
-                            <img src="img/project-img/hri-power.png" alt="" class="img-responsive" style="width: 50%; height: auto;  margin: 0; display: block;">
+                            <img src="img/project-img/hri-power.png" alt="" class="img-responsive" style="width: 45%; height: auto;  margin: 0; display: block;">
                         </div>
                         <div class="col-md-6">
                             <ul>
@@ -300,8 +302,30 @@
                     </div>
 
                     <h4>Data Analysis</h4>
+                    <p>All analyses and visualizations were conducted in Python using packages such as pandas, statsmodels, pingouin, and seaborn.</p>
+
+                    <h5>Data Preparation</h5>
+                    <ul>
+                        <li>Dataset was imported from a processed Excel file.</li>
+                        <li>"None" values were replaced with missing data indicators (NA).</li>
+                        <li>Several columns were cast to categorical types: including participant demographics (gender, age, and experience with robots), experimental conditions (type: failures/no failures, context, and the gender of the user interacting with the robot), and participant IDs.</li>
+                    </ul>
 
                     <img src="img/project-img/hri-data.png" alt="" class="img-responsive" style="width: 100%; height: auto;  margin: 0; display: block;">
+
+
+                    <h5>Metrics Calculations</h5>
+                    <ul>
+                        <li>First, to assess the internal consistency of the rating subscales, Cronbach’s alpha was computed for each using the pingouin package in Python. All subscales demonstrated high internal reliability, with alpha ≥ 0.81.</li>
+                        <li>Next, the mean was calculated for each of the five subscales of the MDMT and RoSAS scales.</li>
+                    </ul>
+
+                    <h5>Statistical Modeling</h5>
+                    <ul>
+                        <li>To assess the effects of experimental manipulations and participant characteristics, <strong>linear-mixed-effect models</strong> were fitted using the statsmodels package.</li>
+                        <li><strong>Participant ID</strong> was included as a <strong>random effect</strong> to account for repeated measures.</li>
+                        <li>Then, various combinations of fixed effects, presented in the results, were tested to identify statistically significant difference.</li>
+                    </ul>
 
                     <div class="divider" id="ai2">
                         <div class="dot1"></div>
@@ -310,9 +334,16 @@
                     </div>  
 
                     <h3>RESULTS</h3>
-                    <p>These were the final results comparing both algorithms:</p>
-                    <img src="img/project-img/sent-table.png" alt="" class="img-responsive" style="width: 60%; height: auto;  margin: 0 auto; display: block;">
 
+                    
+                    <div class="divider" id="ai2">
+                        <div class="dot1"></div>
+                        <div class="dot2"></div>
+                        <div class="dot3"></div>
+                    </div>  
+
+                    <h3>DISCUSSION</h3>
+                    
                     <div class="divider" id="ai2">
                         <div class="dot1"></div>
                         <div class="dot2"></div>
@@ -328,7 +359,6 @@
                         <li><strong>Deep Learning Models: </strong>Exploring deep learning models like recurrent neural networks (RNNs) or transformers could offer even better performance on sentiment classification tasks involving large text datasets.</li>
                         <li><strong>Data Sources: </strong>Look for additional data sources or more diverse datasets to train and evaluate the models, improving generalization.</li>
                     </ul>
-
 
 
                     <h4>Persona Takeaways</h4>
